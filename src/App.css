@@ -1,38 +1,204 @@
 .App {
-  text-align: center;
+    color: #444;
+    font-size: 13.5px;
+    font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-size: 18.5px;
+    font-weight: 500;
+    margin: 49px 91px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cards_wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card {
+    width: 639px;
+    height: 377px;
+    margin: 37px 30.5px;
+    border-radius: 3.8px;
+    box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+    border: solid 0.2px #444444;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.card .header {
+    width: 637.3px;
+    height: 233.2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.promoted {
+    width: 152px;
+    height: 33px;
+    background-color: #68a7ff;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #ffffff;
+    justify-content: center;
+
+    position: absolute;
+    flex: unset;
+    top: -16.5px;
+    right: 0;
+
+    -webkit-clip-path:polygon(100% 0, 100% 100%, 0 100%, 12% 50%, 0 0);
+    -moz-clip-path:polygon(100% 0, 100% 100%, 0 100%, 12% 50%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 12% 50%, 0 0);
+
+}
+
+.header_top {
+    padding: 37.3px 13px;
+}
+
+.rating {
+    width: 75px;
+    height: 53px;
+    border-radius: 3.8px;
+    background-color: #f5a626;
+    color: #fff;
+    justify-content: center;
+}
+
+.rating strong {
+    font-size: 18px;
+}
+
+.header_botttom {
+    margin: 21.8px 14.3px;
+}
+
+.ranking {
+    color: #fff;
+}
+
+.tag {
+    width: 135px;
+    height: 34px;
+    border-radius: 16.5px;
+    padding: 11px 18px;
+    background-color: #fff;
+    margin-right: 7px;
+    text-transform: capitalize;
+}
+
+.card_main {
+    width: 100%;
+}
+
+.card_main__left h2 {
+    font-size: 18.5px;
+    line-height: 0.97;
+    margin: 18.2px 17px 11px 17px;
+    padding: 0px;
+}
+
+.nearest_places {
+    margin: 0px 17px;
+    color: #adadad;
+}
+
+.nearest_places span:first-of-type {
+    color: #444;
+}
+
+.famPlace {
+    margin: 17px 0 9px 17px;
+    color: #adadad;
+
+}
+
+.text_green {
+    color: #37b396;
+}
+
+.offer {
+    width: 347px;
+    height: 35px;
+    background-color: #ccf5e7;
+    border-top-right-radius: 17.5px;
+    border-bottom-right-radius: 17.5px;
+    padding-left: 17px;
+}
+
+.card_main__right {
+    margin: 12.2px 26px;
+    text-align: right;
+}
+
+.discWrapper {
+    font-size: 11px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.discount {
+    display: inline-block;
+    padding: 2px 3px;
+    width: 29px;
+    height: 14px;
+    background-color: #dd1c26;
+    color: #fff;
+}
+
+.triangle {
+    display:inline;
+    border-style: solid;
+    border-width: 9px 9px 9px 0;
+    border-color: #FFF #dd1c26 #FFF #FFF ;
+    position:absolute;
+}
+
+.disc_fees{
+    font-size: 28.5px;
+    font-weight: bold;
+    line-height: 0.89;
+    color: #dd1c26;
+    margin-top: 14px;
+}
+
+.fees_cycle {
+    font-size: 11px;
+    line-height: 1.64;
+}
+
+.amenties {
+    font-weight: bold;
+    color: #37b396;
+    margin-right: 27px;
+}
+
+
+/* flex properties */
+
+.rowFlex {
+    display: flex;
+    align-items: center;
+}
+
+.colFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.align_end {
+    align-items: flex-end;
 }
